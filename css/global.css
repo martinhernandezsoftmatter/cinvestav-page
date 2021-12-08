@@ -1,0 +1,173 @@
+:root {
+	--primary-color: #000000;
+	--secondary-color: #0c6a30;
+	--font-color: #4a4a4a;
+	--bg-color: #ffffff;
+	--title-color: #000000;
+	--subtitle-color: #363636;
+	--hover-color: #f5f5f5;
+	--surface-1-bg-color: hsl(0, 0%, 96%);
+	--surface-1-color: rgba(42, 42, 42, 0.8);
+}
+
+[data-theme="dark"] {
+	--primary-color: #ffffff;
+	--secondary-color: #18d860;
+	--font-color: #cccccc;
+	--bg-color: #000000;
+	--title-color: #ffffff;
+	--subtitle-color: #cccccc;
+	--hover-color: #363636;
+	--surface-1-bg-color: hsl(0, 0%, 21%);
+	--surface-1-color: rgba(234, 234, 234, 0.8);
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+}
+strong {
+	color: var(--font-color);
+}
+a {
+	color: var(--secondary-color);
+}
+a:hover {
+	color: var(--secondary-color);
+	text-decoration: underline;
+}
+.divider {
+	background-color: var(--primary-color);
+}
+a.navbar-item {
+	margin: 8px 0;
+	color: var(--font-color);
+	border-radius: 5px;
+}
+a.navbar-item:hover {
+	border: none;
+	color: var(--secondary-color);
+	background-color: var(--hover-color);
+	text-decoration: none;
+}
+a.navbar-link {
+	color: var(--font-color);
+	text-decoration: none;
+}
+
+a.navbar-link:hover {
+	color: var(--secondary-color);
+	text-decoration: none;
+}
+.current-section {
+	color: var(--secondary-color) !important;
+	border-top: 3px solid var(--secondary-color) !important;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+@media screen and (max-width: 1023px) {
+	.current-section {
+		border-top: none !important;
+	}
+	.navbar-item.has-dropdown .navbar-dropdown {
+		display: none;
+	}
+	.navbar-item.has-dropdown.is-active .navbar-dropdown {
+		display: block;
+	}
+}
+.navbar {
+	background-color: var(--bg-color);
+}
+#hamburguer-button span {
+	color: var(--font-color);
+}
+.navbar-menu.is-active {
+	background-color: var(--bg-color);
+}
+.navbar .button {
+	background-color: var(--bg-color);
+	color: var(--font-color);
+}
+.surface-1 {
+	background-color: var(--surface-1-bg-color);
+	color: var(--surface-1-color);
+}
+.title {
+	color: var(--title-color);
+}
+.subtitle {
+	color: var(--subtitle-color);
+}
+.button.is-info.is-inverted {
+	background-color: var(--bg-color);
+}
+.button.is-info.is-inverted:hover {
+	background-color: var(--hover-color);
+}
+.cinvestav-link {
+	margin: 12px;
+	color: var(--secondary-color);
+}
+.cinvestav-link:hover {
+	text-decoration: underline;
+}
+.navbar-item.has-dropdown.is-active .navbar-link,
+.navbar-item.has-dropdown:focus .navbar-link,
+.navbar-item.has-dropdown:hover .navbar-link {
+	background-color: var(--hover-color);
+	color: var(--font-color);
+}
+.navbar-dropdown {
+	background-color: var(--bg-color);
+}
+.navbar-dropdown .navbar-item {
+	color: var(--font-color);
+}
+
+.navbar-dropdown a.navbar-item:hover {
+	background-color: var(--hover-color);
+	color: var(--font-color);
+}
+
+.navbar-dropdown a.navbar-item.is-active {
+	background-color: var(--hover-color);
+	color: var(--secondary-color);
+}
+
+.image-header {
+	width: 100vw;
+	height: 50vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.agua-azul-image {
+	background-image: url("../img/WaterFallAguaAzul.jpg");
+}
+
+.chihuahua-dog-image {
+	background-image: url("../img/ChihuahuaDog.jpg");
+}
+
+.giant-crystals-image {
+	background-image: url("../img/NaicaCave-of-GiantCrystals-Chihuahua-Mexico.jpg");
+}
+
+.riviera-maya-image {
+	background-image: url("../img/riviera-maya-mexico.jpg");
+}
+
+.text-image-header {
+	text-shadow: 2px 2px 0 black;
+}
+
+.navbar-item img {
+	max-height: unset !important;
+}
+
+.navbar-brand .navbar-item {
+	margin: 0;
+}
