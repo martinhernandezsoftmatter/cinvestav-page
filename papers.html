@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CINVESTAV website of Dr. Martín Hernández Contreras. Papers page">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
   <link rel="stylesheet" href="./css/global.css">
   <script defer src="js/theme.js"></script>
@@ -10,13 +11,13 @@
   <title>Martín Hernández - Papers</title>
 </head>
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="Navigation bar.">
     <section class="navbar-brand">
       <a href="https://www.fis.cinvestav.mx/" class="navbar-item">
         <img src="img/cinvestav.jpg" alt="" width="40" height="40"/>
         <span class="cinvestav-link">Go to Physics departement</span>
       </a>
-      <button id="hamburguer-button" class="navbar-burger">
+      <button id="hamburguer-button" class="navbar-burger" aria-label="Toggle navigation bar" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -26,20 +27,21 @@
     <section id="navbar-menu" class="navbar-menu">
       <section class="navbar-end">
         <a href="index.html" class="navbar-item">Home</a>
-        <a href="papers-cinvestav.html" class="navbar-item current-section">Papers</a>
-        <span class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Theme</a>
-          <section class="navbar-dropdown">
-            <a class="navbar-item item-theme">Light</a>
-            <a class="navbar-item item-theme">Dark</a>
-            <a class="navbar-item item-theme">System</a>
+        <a href="papers.html" class="navbar-item current-section">Papers</a>
+        <span class="navbar-item">
+          <section class="select is-fullwidth">
+            <select name="theme-dropdown" aria-label="Change webpage theme.">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+              <option value="system">System</option>
+            </select>
           </section>
         </span>
       </section>
     </section>
   </nav>  
 
-  <header class="hero is-success image-header agua-azul-image">
+  <header class="hero is-success image-header agua-azul-image" role="img" aria-label="Agua Azul Waterfall, Chiapas, Mexico.">
     <section class="hero-body">
       <p class="title text-image-header">Papers</p>
     </section>

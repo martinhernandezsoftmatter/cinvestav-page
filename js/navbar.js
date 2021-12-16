@@ -1,19 +1,16 @@
-const hamburguerButton = document.querySelector("#hamburguer-button")
+const hamburguerButton = document.querySelector("#hamburguer-button");
 hamburguerButton.addEventListener("click", toggleNavbar);
 
-document.querySelector(".navbar-item.has-dropdown").addEventListener("click", (event) => {
-	toggleNavbarDropdown(event.target.parentElement);
-});
-
+/**
+ * Event handler that runs when the hamburger button is clicked (mobile version only).
+ */
 function toggleNavbar() {
 	hamburguerButton.classList.toggle("is-active");
 	document.querySelector("#navbar-menu").classList.toggle("is-active");
-}
-
-/**
- *
- * @param {HTMLDivElement} dropdown
- */
-function toggleNavbarDropdown(dropdown) {
-	dropdown.classList.toggle("is-active");
+	const currentExpandedAria = hamburguerButton.getAttribute("aria-expanded");
+	if(currentExpandedAria === "true") {
+		hamburguerButton.setAttribute("aria-expanded", "false");
+	} else {
+		hamburguerButton.setAttribute("aria-expanded", "true");
+	}
 }
